@@ -59,6 +59,7 @@ Partial Class Form1
         '
         Me.txtNombre.Location = New System.Drawing.Point(44, 80)
         Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.ShortcutsEnabled = False
         Me.txtNombre.Size = New System.Drawing.Size(166, 20)
         Me.txtNombre.TabIndex = 2
         '
@@ -66,6 +67,7 @@ Partial Class Form1
         '
         Me.txtApellido.Location = New System.Drawing.Point(44, 171)
         Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.ShortcutsEnabled = False
         Me.txtApellido.Size = New System.Drawing.Size(166, 20)
         Me.txtApellido.TabIndex = 3
         '
