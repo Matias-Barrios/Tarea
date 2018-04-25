@@ -25,7 +25,7 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
-        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.txtEdad = New System.Windows.Forms.TextBox()
         Me.rdoOtros = New System.Windows.Forms.RadioButton()
         Me.rdoFemenino = New System.Windows.Forms.RadioButton()
         Me.rdoMasculino = New System.Windows.Forms.RadioButton()
@@ -51,9 +51,9 @@ Partial Class Form1
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Location = New System.Drawing.Point(67, 128)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 24)
+        Me.Label2.Size = New System.Drawing.Size(62, 24)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Apellido"
+        Me.Label2.Text = "Edad"
         '
         'txtNombre
         '
@@ -63,13 +63,13 @@ Partial Class Form1
         Me.txtNombre.Size = New System.Drawing.Size(166, 20)
         Me.txtNombre.TabIndex = 2
         '
-        'txtApellido
+        'txtEdad
         '
-        Me.txtApellido.Location = New System.Drawing.Point(44, 171)
-        Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.ShortcutsEnabled = False
-        Me.txtApellido.Size = New System.Drawing.Size(166, 20)
-        Me.txtApellido.TabIndex = 3
+        Me.txtEdad.Location = New System.Drawing.Point(44, 171)
+        Me.txtEdad.Name = "txtEdad"
+        Me.txtEdad.ShortcutsEnabled = False
+        Me.txtEdad.Size = New System.Drawing.Size(166, 20)
+        Me.txtEdad.TabIndex = 3
         '
         'rdoOtros
         '
@@ -129,7 +129,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(254, 441)
         Me.Controls.Add(Me.grpboxGenero)
-        Me.Controls.Add(Me.txtApellido)
+        Me.Controls.Add(Me.txtEdad)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -149,7 +149,7 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtNombre As TextBox
-    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents txtEdad As TextBox
     Friend WithEvents rdoOtros As RadioButton
     Friend WithEvents rdoFemenino As RadioButton
     Friend WithEvents rdoMasculino As RadioButton
