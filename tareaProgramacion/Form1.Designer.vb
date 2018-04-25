@@ -26,11 +26,11 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtApellido = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.rdoMasculino = New System.Windows.Forms.RadioButton()
-        Me.rdoFemenino = New System.Windows.Forms.RadioButton()
         Me.rdoOtros = New System.Windows.Forms.RadioButton()
-        Me.Panel1.SuspendLayout()
+        Me.rdoFemenino = New System.Windows.Forms.RadioButton()
+        Me.rdoMasculino = New System.Windows.Forms.RadioButton()
+        Me.grpboxGenero = New System.Windows.Forms.GroupBox()
+        Me.grpboxGenero.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -71,49 +71,12 @@ Partial Class Form1
         Me.txtApellido.Size = New System.Drawing.Size(166, 20)
         Me.txtApellido.TabIndex = 3
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.rdoOtros)
-        Me.Panel1.Controls.Add(Me.rdoFemenino)
-        Me.Panel1.Controls.Add(Me.rdoMasculino)
-        Me.Panel1.Enabled = False
-        Me.Panel1.Location = New System.Drawing.Point(12, 223)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(232, 215)
-        Me.Panel1.TabIndex = 4
-        '
-        'rdoMasculino
-        '
-        Me.rdoMasculino.AutoSize = True
-        Me.rdoMasculino.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoMasculino.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.rdoMasculino.Location = New System.Drawing.Point(57, 48)
-        Me.rdoMasculino.Name = "rdoMasculino"
-        Me.rdoMasculino.Size = New System.Drawing.Size(107, 24)
-        Me.rdoMasculino.TabIndex = 0
-        Me.rdoMasculino.TabStop = True
-        Me.rdoMasculino.Text = "Masculino"
-        Me.rdoMasculino.UseVisualStyleBackColor = True
-        '
-        'rdoFemenino
-        '
-        Me.rdoFemenino.AutoSize = True
-        Me.rdoFemenino.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoFemenino.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.rdoFemenino.Location = New System.Drawing.Point(57, 102)
-        Me.rdoFemenino.Name = "rdoFemenino"
-        Me.rdoFemenino.Size = New System.Drawing.Size(106, 24)
-        Me.rdoFemenino.TabIndex = 1
-        Me.rdoFemenino.TabStop = True
-        Me.rdoFemenino.Text = "Femenino"
-        Me.rdoFemenino.UseVisualStyleBackColor = True
-        '
         'rdoOtros
         '
         Me.rdoOtros.AutoSize = True
         Me.rdoOtros.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rdoOtros.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.rdoOtros.Location = New System.Drawing.Point(59, 158)
+        Me.rdoOtros.Location = New System.Drawing.Point(59, 118)
         Me.rdoOtros.Name = "rdoOtros"
         Me.rdoOtros.Size = New System.Drawing.Size(62, 24)
         Me.rdoOtros.TabIndex = 2
@@ -121,13 +84,51 @@ Partial Class Form1
         Me.rdoOtros.Text = "Otro"
         Me.rdoOtros.UseVisualStyleBackColor = True
         '
+        'rdoFemenino
+        '
+        Me.rdoFemenino.AutoSize = True
+        Me.rdoFemenino.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoFemenino.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.rdoFemenino.Location = New System.Drawing.Point(59, 79)
+        Me.rdoFemenino.Name = "rdoFemenino"
+        Me.rdoFemenino.Size = New System.Drawing.Size(106, 24)
+        Me.rdoFemenino.TabIndex = 1
+        Me.rdoFemenino.TabStop = True
+        Me.rdoFemenino.Text = "Femenino"
+        Me.rdoFemenino.UseVisualStyleBackColor = True
+        '
+        'rdoMasculino
+        '
+        Me.rdoMasculino.AutoSize = True
+        Me.rdoMasculino.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoMasculino.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.rdoMasculino.Location = New System.Drawing.Point(59, 38)
+        Me.rdoMasculino.Name = "rdoMasculino"
+        Me.rdoMasculino.Size = New System.Drawing.Size(107, 24)
+        Me.rdoMasculino.TabIndex = 0
+        Me.rdoMasculino.TabStop = True
+        Me.rdoMasculino.Text = "Masculino"
+        Me.rdoMasculino.UseVisualStyleBackColor = True
+        '
+        'grpboxGenero
+        '
+        Me.grpboxGenero.Controls.Add(Me.rdoMasculino)
+        Me.grpboxGenero.Controls.Add(Me.rdoFemenino)
+        Me.grpboxGenero.Controls.Add(Me.rdoOtros)
+        Me.grpboxGenero.Enabled = False
+        Me.grpboxGenero.Location = New System.Drawing.Point(12, 245)
+        Me.grpboxGenero.Name = "grpboxGenero"
+        Me.grpboxGenero.Size = New System.Drawing.Size(230, 184)
+        Me.grpboxGenero.TabIndex = 3
+        Me.grpboxGenero.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(178, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(254, 441)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.grpboxGenero)
         Me.Controls.Add(Me.txtApellido)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.Label2)
@@ -138,8 +139,8 @@ Partial Class Form1
         Me.MinimumSize = New System.Drawing.Size(270, 480)
         Me.Name = "Form1"
         Me.Text = "Tarea"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.grpboxGenero.ResumeLayout(False)
+        Me.grpboxGenero.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -149,8 +150,8 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtApellido As TextBox
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents rdoOtros As RadioButton
     Friend WithEvents rdoFemenino As RadioButton
     Friend WithEvents rdoMasculino As RadioButton
+    Friend WithEvents grpboxGenero As GroupBox
 End Class
