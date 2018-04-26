@@ -58,6 +58,7 @@ Partial Class Form1
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(44, 80)
+        Me.txtNombre.MaxLength = 25
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.ShortcutsEnabled = False
         Me.txtNombre.Size = New System.Drawing.Size(166, 20)
@@ -66,6 +67,7 @@ Partial Class Form1
         'txtEdad
         '
         Me.txtEdad.Location = New System.Drawing.Point(44, 171)
+        Me.txtEdad.MaxLength = 3
         Me.txtEdad.Name = "txtEdad"
         Me.txtEdad.ShortcutsEnabled = False
         Me.txtEdad.Size = New System.Drawing.Size(166, 20)
